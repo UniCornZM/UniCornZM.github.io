@@ -1,0 +1,250 @@
+body{
+    background:url(imagenes/fondo-binario.png) ;
+    box-shadow: inset 20px 150px 800px rgb(254, 254, 254);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.menu {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.logo {
+    margin: 10px auto;
+    text-align: left;
+    border-radius: 6px;
+    width: 10%;
+    display: inline-block;
+}
+
+nav {
+    /*Esta es el css de labarra de navegacion*/
+    position: absolute;
+    top: 25px;
+    /*posicion del top hacia abajo*/
+    right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 50px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;  
+}
+
+#main-principal{
+    display: flex;/*coloca los elementos uno al lado del otro*/
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.text-area{
+    border: none;
+    color: #03989e;
+    background: transparent;
+    margin: 50px 10px 0 70px;
+    font-size: 16px;
+    text-transform: lowercase;
+    box-shadow: inset 200px 250px 800px rgb(254, 254, 254),
+            0px 100px 800px rgb(255, 255, 255);
+}
+
+:placeholder{color: #bdbdbd}
+.text-area:focus{
+    outline: none;/*quitamos el recuadro del foco*/
+}
+
+.informacion-ingreso-texto{
+    margin-left: 80px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.texto-copiar{
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 190px;
+    text-align: center;
+    font-weight: bold;
+    background: #03989e ;
+    color: #ffffff;
+    opacity: 0;/*para que no se muestre*/
+}
+
+.mensaje{
+   border: none;/*elimintar borde por defecto*/
+   border-radius: 50px;
+   background-image: url(imagenes/lock.jpg);
+   background-repeat: no-repeat; /*para no repetir varias veces la iamgen del background*/
+   color: #03989e;
+   font-size: 16px;
+   margin: 50px 10px 0 70px;
+   padding: 15px;
+   position: fixed;/*An element with position: fixed;
+    is positioned relative to the viewport,
+    which means it always stays in the same place even if the page is scrolled.*/
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    /*display: flex;/*uno al lado del otro, movimiento flexible*/
+    margin: 18px 0 0 80px;
+    text-align: left;
+}
+
+.btn-desencriptar{
+    background: rgb(193, 193, 193);
+    border: 1px solid #676767;
+    border-radius: 24px;
+    color: #151515;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 30px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.btn-desencriptar:hover{
+    background: url(imagenes/desencriptar.gif);
+    opacity: 0.5;
+    color:white;
+}
+
+.btn-encriptar{
+    background-color: rgb(48, 72, 109);
+    border: 1px solid rgb(0, 19, 51);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.btn-encriptar:hover{
+    background: url(imagenes/fondoPrincipal.gif);
+   
+}
+
+
+.btn-copiar{
+        border: 1px solid #676767;
+        border-radius: 24px;
+        color: #151515;
+        cursor: pointer;
+        height: 50px;
+        margin: 470px 0 0 250px;
+        width: 150px;
+        font-size: 18px;
+}
+
+.btn-copiar:hover{
+    background: rgb(179, 198, 225);
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: rgb(48, 72, 109);
+    color: white;
+    
+}
+
+
+
+
+/*Arhivo HTML2-----CSS queEs---------------------------------------------- */
+
+
+#body-que-es {
+    box-shadow: inset -200px -200px 800px rgb(255, 255, 255), inset 200px 290px 800px rgb(255, 255, 255);
+   
+}
+
+#main-que-es{
+display: block;
+}
+
+.texto-explicativo{
+    font-size: 15px;
+    margin:30px 150px 30px 150px ;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabla{
+    width: 400px;
+    margin:10px auto;
+    text-align: center;
+    
+}
+
+.tabla th{
+        color: rgb(254, 254, 254);
+        background: rgb(48, 72, 109);
+        border: 2px solid #CCCCCC;
+        font-weight: bold;
+        border-radius: 6px;
+        
+
+}
+
+td{
+    border-radius: 6px;
+    border: 2px solid #CCCCCC;
+    padding: 3px 3px;
+    background: #ffffff;
+}
+
+.encriptar-texto{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-encriptar-texto-ahora{
+
+    width: 20%;
+    margin: 55px auto;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #676767;
+    border-radius: px;
+    color: #ffffff;
+    transition: 1s all;
+    background: rgb(48, 72, 109);;
+
+}
+
+.btn-encriptar-texto-ahora:hover{
+    background: url(imagenes/fp2.gif);
+    opacity: 0.5;
+    color: white;
+   
+}

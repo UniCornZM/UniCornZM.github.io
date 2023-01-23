@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Encriptador | Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fuente importada (3 links)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <div class="menu">
+            <img src="imagenes/logo-alura.png" alt="logo-alura" class="logo">
+            <nav>
+                <ul>
+                    <li> <a href="queEs.html"> ¿Qué es un Encriptador y cómo puedo usarlo?</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main id="main-principal">
+
+        <section>
+            <textarea cols="50" rows="20" class="text-area" placeholder="Ingrese texto a encriptar o desencriptar aquí..."></textarea>
+            <div>
+                <h6 class="informacion-ingreso-texto">No se aceptan acentos ni mayúsculas</h6>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" onClick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onClick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+
+        <section>
+            <textarea cols="50" rows="20" class="mensaje" id="mensajeid" ></textarea>
+
+            <div>
+                <button class="btn-copiar" onClick="copiar()">Copiar</button>
+                <h6 class="texto-copiar">Su texto ha sido copiado</h6>
+            </div>
+        </section>
+    </main>
+ <script src="script.js"></script>
+<footer>
+    <h6>Este proyecto es creado por Diego Alejandro Peñuela F. Alura-latam el patrocinador de este desafío</h6>
+</footer>
+</body>
+</html>
